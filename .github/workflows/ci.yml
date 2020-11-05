@@ -1,0 +1,21 @@
+name: Lint and Test
+on: [push]
+
+jobs:
+  ci:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 📦
+        uses: actions/checkout@master
+      - name: Install Ruby 💎
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: Dependencies 🏗
+        run: |
+          gem install standardrb
+      - name: Lint Ruby 🚨
+        run: standardrb
+      - name: Test 🧪
+        run: ruby test/*.rb
