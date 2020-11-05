@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test/unit"
-require_relative "../parser.rb"
+require_relative "../parser"
 
 class ParserTest < Test::Unit::TestCase
   def test_input

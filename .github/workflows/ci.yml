@@ -14,8 +14,10 @@ jobs:
           ruby-version: 2.7
       - name: Dependencies 🏗
         run: |
+          echo 'gem: --no-document' >> ~/.gemrc
           gem install standardrb
       - name: Lint Ruby 🚨
-        run: standardrb
+        run: |
+          standardrb
       - name: Test 🧪
-        run: ruby test/*.rb
+        run: ruby -Itest test/all.rb

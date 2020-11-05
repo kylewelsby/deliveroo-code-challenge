@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test/unit"
-require_relative "../cron_part.rb"
+require_relative "../cron_part"
 
 class CronPartTest < Test::Unit::TestCase
   def test_every

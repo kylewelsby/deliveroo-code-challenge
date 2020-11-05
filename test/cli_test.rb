@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test/unit"
-require 'open3'
+require "open3"
 
 class CLITest < Test::Unit::TestCase
   def test_cli_output

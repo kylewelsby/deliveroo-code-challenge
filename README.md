@@ -13,6 +13,10 @@ _At time of writing the latest stable version of Ruby is 2.7.2_
 
 Currently theres no external dependencies, so no requirement to install anything other than Ruby that is already assumed on your system
 
+```
+git clone https://github.com/kylewelsby/deliveroo-code-challenge.git
+```
+
 ## 🎯 Usage
 
 ```
